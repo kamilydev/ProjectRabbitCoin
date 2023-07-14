@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Rabbit Coin</title>
+    <link rel="stylesheet" href="../../static/Users/users-form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+<body class="colors-back">
+
+<a class="logo" target="_blank">
+    <img src="../../static/Users/rabbitlogo.png" alt="logo">
+</a>
+
+<h1 class="title">Rabbit Coin</h1>
+
+<div class="section">
+    <div class="container">
+        <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+                <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                    <h6 class="mb-0 pb-3 colors-font"><span>Login </span><span>Cadastrar</span></h6>
+                    <input class="checkbox " type="checkbox" id="reg-log" name="reg-log"/>
+                    <label for="reg-log"></label>
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <div class="card-front">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+
+                                        <form method="GET" action="/login" >
+                                            <fieldset>
+                                                <h4 class="colors-font mb-4 pb-2">Login</h4>
+                                                <div class="form-group">
+                                                    <input type="text" name="username" class="form-style" placeholder="Usuário" autocomplete="off">
+                                                    <i class="input-icon uil uil-at"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <input type="password" name="password" class="form-style" placeholder="Senha"  autocomplete="off">
+                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                </div>
+                                                <button type="submit"  class="btn mt-4">Entrar</button>
+                                            </fieldset>
+                                        </form>
+                                        <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Esqueceu sua senha?</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+
+                                        <form method="POST" action="/newUser" >
+                                            <fieldset>
+                                               <br>
+                                                <h4 class="colors-font mb-4 pb-2">Cadastro de usuário</h4>
+                                                <div class="form-group">
+                                                    <input type="text" name="name" class="form-style" placeholder="Como posso te chamar?"  autocomplete="off">
+                                                    <i class="input-icon uil uil-user"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <input type="text" name="username" class="form-style" placeholder="Nome de usuário"  autocomplete="off">
+                                                    <i class="input-icon uil uil-user"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <input type="email" name="email" class="form-style" placeholder="E-mail"  autocomplete="off">
+                                                    <i class="input-icon uil uil-at"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <input type="password" name="password" class="form-style" placeholder="Senha"  autocomplete="off">
+                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                </div>
+                                                <button href="#" type="submit"  class="btn mt-4">Cadastrar</button>
+                                            </fieldset>
+                                        </form>
+                                        <br><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

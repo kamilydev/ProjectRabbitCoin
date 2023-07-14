@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+/* Toggle Styles */
+
+#viewport {
+    padding-left: 170px;
+    width: 100%;
+    height: 700px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: page;
+}
+
+
+#content {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-right: 0;
+    background: rgb(24, 24, 24);
+}
+
+
+/* Sidebar Styles */
+#sidebar {
+    z-index: 1000;
+    position: absolute;
+    left: 250px;
+    width: 170px;
+    height: 700px;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #ff6600;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#sidebar .nav{
+    display: block;
+    align-items: center;
+    justify-items: left;
+}
+#sidebar .icon-item{
+    height: 25px;
+    width: auto;
+    padding-right: 5px;
+}
+#sidebar .btn{
+    width: 100%;
+    margin-bottom: 2%;
+    box-shadow: 0px 3px 8px 2px rgba(190, 79, 2, 0.6);
+}
+#sidebar .btn:hover{
+    background: #cc0871;
+    box-shadow: 0px 3px 8px 2px rgba(186, 13, 105, 0.68);
+}
+#sidebar a:hover{
+    color: black;
+}
+
+
+/* Header Styles */
+.tittle{
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+}
+#welcome{
+    color: #cc0871;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.top{
+    background: #000000;
+    display: block;
+    text-align: center;
+    height: 1%;
+    padding: 3px;
+    color: white;
+}
+.logo {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    display: block;
+    z-index: 100;
+    transition: all 250ms linear;
+}
+.logo img {
+    height: 35px;
+    width: auto;
+    display: block;
+}
+
+
+/* Content Styles */
+#content .tittle-page{
+    color: #ffffff;
+}
+
+/* BUTTONS INPUT AND OUTPUT*/
+.buttons-register{
+    display: flex;
+    margin-left: 10px;
+}
+.button-output, .button-input{
+    display: flex;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: #91918f;
+}
+.button-output{
+    background: #fc4141;
+}
+.button-input{
+    background: springgreen;
+}
+.icon-item-btn{
+    height: 25px;
+    margin-top: 7px;
+    margin-left: 1px;
+    box-shadow: none;
+}
+
+#content #pst{
+    margin-left: 10px;
+}
+
+/* BACKGROUND ELEMENTS Styles */
+
+#content .back-elements{
+    display:flex;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.36);
+}
+
+/* DASHBOARD Styles */
+#content .dashboard{
+    width: 400px;
+    height: 450px;
+    margin: 20px 5px;
+    display:flex;
+}
+#content .tittle-elements{
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 10px;
+}
+
+/* ÚLTIMOS REGISTROS Styles */
+#content .news-registers {
+    width: 900px;
+    margin: 20px 20px;
+    height: 400px;
+    display:flex;
+}
+#content .home-registers{
+    display: flex;
+    width: 100%;
+}
+
+
+.btn-form-save{
+    border-radius: .5rem;
+    color: white;
+    background-color: #ba0d69;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    border:none;
+    text-align: center;
+}
+
+.btn-form-close{
+    border-radius: .5rem;
+    color: white;
+    background-color: #ff6600;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    text-align: center;
+    border:none;
+}
+
+.form-category{
+    width: 88%;
+    font-weight: 500;
+}
+.form-input{
+    width: 100%;
+    font-weight: 500;
+}
+
+.form-style{
+    padding: 13px 20px 13px 55px;
+    height: 48px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    outline: none;
+    color: #c4c3ca;
+    background-color: #000000;
+    border: none;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+.form-style:focus, .form-style:active {
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(186, 13, 105, 0.66);
+}
+.tittle-form{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.back-form{
+    background-color: #181818;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: rgb(186, 13, 105);
+    width: 60%;
+}
+.font-form{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+}
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.62);
+
+}
+.central-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#green-input{
+    color: springgreen;
+}
+#red-input{
+    color: red;
+}
+
+
+/* REGISTROSSSS Styles */
+
+.title-box {
+    padding: 3rem 1.5rem 2rem;
+    text-align: center;
+}
+.table-back{
+    background: rgba(0,0,0,0.36);
+    width: 100%;
+    margin: 20px 10px;
+    height: 400px;
+    border-radius: .5rem;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+table.selection-table tbody tr:hover {
+    background: rgba(250, 250, 246, 0.1);
+}
+
+thead{
+    background-color: #ba0d69;
+    color: white;
+}
+td{
+    color: #fafaf6;
+}

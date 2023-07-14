@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+/* Toggle Styles */
+
+#viewport {
+    padding-left: 170px;
+    width: 100%;
+    height: 700px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: page;
+}
+
+
+#content {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-right: 0;
+    background: rgb(24, 24, 24);
+}
+
+
+/* Sidebar Styles */
+#sidebar {
+    z-index: 1000;
+    position: absolute;
+    left: 250px;
+    width: 170px;
+    height: 700px;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #ff6600;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#sidebar .nav{
+    display: block;
+    align-items: center;
+    justify-items: left;
+}
+#sidebar .icon-item{
+    height: 25px;
+    width: auto;
+    padding-right: 5px;
+}
+#sidebar .btn{
+    width: 100%;
+    margin-bottom: 2%;
+    box-shadow: 0px 3px 8px 2px rgba(190, 79, 2, 0.6);
+}
+#sidebar .btn:hover{
+    background: #cc0871;
+    box-shadow: 0px 3px 8px 2px rgba(186, 13, 105, 0.68);
+}
+#sidebar a:hover{
+    color: black;
+}
+
+
+/* Header Styles */
+.tittle{
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+}
+.top{
+    background: #000000;
+    display: block;
+    text-align: center;
+    height: 1%;
+    padding: 3px;
+    color: white;
+}
+.logo {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    display: block;
+    z-index: 100;
+    transition: all 250ms linear;
+}
+.logo img {
+    height: 35px;
+    width: auto;
+    display: block;
+}
+
+
+/* Content Styles */
+#content .tittle-page{
+    color: #ffffff;
+}
+
+/* BUTTONS INPUT AND OUTPUT*/
+.buttons-register{
+    display: flex;
+    margin-left: 10px;
+}
+.button-output, .button-input{
+    display: flex;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+}
+.buttons-register :hover{
+    box-shadow: 3px 3px 10px #ba0d69;
+    border-radius: 15px;
+}
+.button-output{
+    background: #fc4141;
+}
+.button-input{
+    background: springgreen;
+}
+.icon-item-btn{
+    height: 25px;
+    margin-top: 7px;
+    margin-left: 1px;
+    box-shadow: none;
+}
+.bug-shadow:hover{
+    box-shadow: none;
+}
+#content #pst{
+    margin-left: 10px;
+}
+
+/* BACKGROUND ELEMENTS Styles */
+
+#content .back-elements{
+    display:flex;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,0.36);
+}
+
+/* DASHBOARD Styles */
+#content .dashboard{
+    width: 400px;
+    height: 400px;
+    margin: 20px 5px;
+    display:flex;
+}
+#content .tittle-elements{
+    color: #ba0d69;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 10px;
+}
+
+/* BENEFICIOS Styles */
+#content .registers {
+    width: 1320px;
+    margin: 15px 10px;
+    height: 450px;
+    display:flex;
+}
+#content .home-registers{
+    display: flex;
+    position: absolute;
+}
+#content .box-benefit{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 10px;
+}
+.font-warranty{
+    color: #000000;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.box-benefit a :hover{
+    text-shadow: 0px 5px 10px rgb(255, 102, 0);
+    color: #cc0871;
+}
+#content .box-benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.47);
+}
+
+#content .box-benefit a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#content .box-benefit img {
+    margin-bottom: 10px;
+    height: 120px;
+    width: 130px;
+}
+

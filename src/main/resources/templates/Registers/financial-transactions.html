@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Movimentações Financeiras</title>
+    <link rel="stylesheet" href="../../static.Registers/financial-transactions.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div class="top">
+        <h1 class="title">Rabbit Coin</h1>
+        <a class="logo">
+            <img src="../../static/Users/rabbitlogo.png" alt="logo">
+        </a>
+    </div>
+    <div id="viewport">
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <ul class="nav">
+
+                <li>
+                    <a href="http://localhost:63342/RabbitCoin/templates/Home/home.html" rel="noopener noreferrer">
+                        <button type="button" class="btn">
+                            <img class="icon-item" src="../../static.Home/home.png" alt="home">
+                            <strong class="item-sidebar">Home</strong>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:63342/RabbitCoin/templates/Registers/financial-transactions.html" rel="noopener noreferrer">
+                        <button type="button" class="btn">
+                            <img class="icon-item" src="../../static.Home/add.png" alt="registros">
+                            <strong class="item-sidebar">Registros</strong>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:63342/RabbitCoin/templates/Warranty/warranty-card.html" rel="noopener noreferrer">
+                        <button type="button" class="btn">
+                            <img class="icon-item" src="../../static.Home/benefit.png" alt="benefícios">
+                            <strong class="item-sidebar">Benefícios</strong>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:63342/RabbitCoin/templates/Settings/settings.html" rel="noopener noreferrer">
+                        <button type="button" class="btn">
+                            <img class="icon-item" src="../../static.Home/config.png" alt="configurações">
+                            <strong class="item-sidebar">Configurações</strong>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/kamilydev/RabbitCoin" target="_blank" rel="noopener noreferrer">
+                        <button type="button" class="btn" >
+                            <img class="icon-item" src="../../static.Home/info.png" alt="informações">
+                            <strong class="item-sidebar">Informações</strong>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:63342/RabbitCoin/templates/Login/users-form.html" rel="noopener noreferrer">
+                        <button type="button" class="btn" >
+                            <img class="icon-item" src="../../static.Home/logout.png" alt="logout">
+                            <strong class="item-sidebar">Sair</strong>
+                        </button>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Content -->
+        <div id="content">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <h1 class="tittle-page">Movimentações Financeiras</h1>
+                </div>
+            </nav>
+            <div class="container-fluid">
+
+
+                <!--CALENDÁRIO-->
+                <p class="tittle-elements">Selecione um mês de visualização</p>
+                <div class="date-picker">
+                    <label class="period">Mês: </label>
+                    <input class="form-calendar" type="month" name="date">
+                    <div class="calendar"></div>
+                </div>
+
+
+
+
+                <div class="home-registers">
+                    <!--MOVIMENTAÇÕES-->
+                        <div class="container registers">
+                            <table class="table-back table-bordered grocery-crud-table selection-table">
+                                <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Categoria</th>
+                                    <th>Descrição</th>
+                                    <th>Valor</th>
+                                    <th>Tipo</th>
+                                    <th>Ações</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>20/07/2023</td>
+                                    <td>Supermercado</td>
+                                    <td>Frutas e legumes</td>
+                                    <td>-150,00</td>
+                                    <td>Saída</td>
+                                    <td>
+                                        <a class=" btn-form-save" href="">Editar</a>
+                                        <a class=" btn-form-close" href="">Excluir</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>20/07/2023</td>
+                                    <td>Combustível</td>
+                                    <td>10L gasolina</td>
+                                    <td>-200,49</td>
+                                    <td>Saída</td>
+                                    <td>
+                                        <a class=" btn-form-save" href="">Editar</a>
+                                        <a class=" btn-form-close" href="">Excluir</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>24/07/2023</td>
+                                    <td>Salário</td>
+                                    <td>1º quinzena</td>
+                                    <td>+600,00</td>
+                                    <td>Entrada</td>
+                                    <td>
+                                        <a class=" btn-form-save" href="">Editar</a>
+                                        <a class=" btn-form-close" href="">Excluir</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>20/07/2023</td>
+                                    <td>Farmácia</td>
+                                    <td>salompas</td>
+                                    <td>-15.40</td>
+                                    <td>Saída</td>
+                                    <td>
+                                        <a class=" btn-form-save" href="">Editar</a>
+                                        <a class=" btn-form-close" href="">Excluir</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>20/07/2023</td>
+                                    <td>IPTU</td>
+                                    <td>parcela 5/12</td>
+                                    <td>-119,90</td>
+                                    <td>Saída</td>
+                                    <td>
+                                        <a class=" btn-form-save" href="">Editar</a>
+                                        <a class=" btn-form-close" href="">Excluir</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>20/07/2023</td>
+                                    <td>Renda extra</td>
+                                    <td>Salgaderia</td>
+                                    <td>+460,50</td>
+                                    <td>Entrada</td>
+                                    <td>
+                                        <a class=" btn-form-save" href="">Editar</a>
+                                        <a class=" btn-form-close" href="">Excluir</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js'></script>
+    <script src='https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js'></script>
+
+    <script src="../Registers/financial-transactions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

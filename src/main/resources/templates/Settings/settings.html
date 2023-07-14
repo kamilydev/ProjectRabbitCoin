@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="../../static.Settings/settings.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="top">
+    <h1 class="title">Rabbit Coin</h1>
+    <a class="logo">
+        <img src="../../static/Users/rabbitlogo.png" alt="logo">
+    </a>
+</div>
+<div id="viewport">
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <ul class="nav">
+            <li>
+                <a href="http://localhost:63342/RabbitCoin/templates/Home/home.html" rel="noopener noreferrer">
+                    <button type="button" class="btn">
+                        <img class="icon-item" src="../../static.Home/home.png" alt="home">
+                        <strong class="item-sidebar">Home</strong>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:63342/RabbitCoin/templates/Registers/financial-transactions.html" rel="noopener noreferrer">
+                    <button type="button" class="btn">
+                        <img class="icon-item" src="../../static.Home/add.png" alt="registros">
+                        <strong class="item-sidebar">Registros</strong>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:63342/RabbitCoin/templates/Warranty/warranty-card.html" rel="noopener noreferrer">
+                    <button type="button" class="btn">
+                        <img class="icon-item" src="../../static.Home/benefit.png" alt="benefícios">
+                        <strong class="item-sidebar">Benefícios</strong>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:63342/RabbitCoin/templates/Settings/settings.html" rel="noopener noreferrer">
+                    <button type="button" class="btn">
+                        <img class="icon-item" src="../../static.Home/config.png" alt="configurações">
+                        <strong class="item-sidebar">Configurações</strong>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/kamilydev/RabbitCoin" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn" >
+                        <img class="icon-item" src="../../static.Home/info.png" alt="informações">
+                        <strong class="item-sidebar">Informações</strong>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:63342/RabbitCoin/templates/Login/users-form.html" rel="noopener noreferrer">
+                    <button type="button" class="btn" >
+                        <img class="icon-item" src="../../static.Home/logout.png" alt="logout">
+                        <strong class="item-sidebar">Sair</strong>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <div id="content">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <h1 class="tittle-page">Configurações</h1>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="home-registers">
+                <div class="back-elements ">
+
+                    <br>
+                    <button class="info-users tittle-elements" onclick="ModalInfoUsers()"><strong>Dados pessoais</strong></button>
+                        <dialog class="back-form">
+                            <form >
+                                <div class="central-form">
+                                    <img class="icon-item" src="../../static.Settings/rabbit.png" alt="user">
+                                    <h2 class="tittle-form">Dados Pessoais</h2>
+                                </div><br>
+                                <input type="text" name="name_user" class="form-style" placeholder="Como posso te chamar?" id="name_user" autocomplete="off"><br><br>
+
+                                <input type="text" name="username_user" class="form-style" placeholder="Nome de usuário" id="username_user" autocomplete="off"><br><br>
+
+                                <input  type="email" name="email_user" class="form-style"  placeholder="E-mail" id="email_user" autocomplete="off"><br><br>
+
+                                <input type="password" name="password_user" class="form-style" placeholder="Senha" id="password_user" autocomplete="off"><br><br>
+
+                                <button type="submit" class="btn-form-save" onclick="BtnSaveModal()">Salvar Alterações</button>
+                                <button type="button" class="btn-form-close" onclick="BtnCloseModal()">Fechar</button>
+                            </form>
+                        </dialog>
+                    <br><br>
+
+                    <button class="notifications tittle-elements" onclick="ModalNotifications()"><strong>notificações</strong></button>
+                    <dialog class="back-form">
+                        <div class="central-form">
+                            <img class="icon-item" src="../../static.Settings/notification.png" alt="notification">
+                            <h2 class="tittle-form">Lembretes</h2>
+                        </div>
+                        <br>
+                        <div class="toggle-positions">
+                            <div class="toggle-elements">
+                                <input type="checkbox" id="switch" ><label for="switch">Toggle</label>
+                                <p class="font-form font-note" >lembre-me de incluir novos registros</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-form-close" onclick="BtnCloseModal()">Fechar</button>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="../Settings/settings.js"></script>
+</body>
+</html>
